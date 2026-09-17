@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Champion Kicks</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      background: #fff;
+    }
+
+    header {
+      height: 175px;
+      background: #111;
+      color: white;
+      padding: 25px 13%;
+    }
+
+    .top-header {
+      position: relative;
+      height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 15px;
+      line-height: 12px;
+      font-weight: 900;
+      text-align: center;
+      font-style: italic;
+    }
+
+    .logo span {
+      display: block;
+    }
+
+    .search {
+      position: absolute;
+      left: 0;
+      font-size: 27px;
+    }
+
+    .icons {
+      position: absolute;
+      right: 0;
+      display: flex;
+      gap: 28px;
+      font-size: 22px;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      margin-top: 10px;
+    }
+
+    .nav a {
+      color: #aaa;
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    .nav a:hover,
+    .nav .active {
+      color: white;
+    }
+
+    .nav .active {
+      border-bottom: 1px solid white;
+      padding-bottom: 5px;
+    }
+
+    .hero {
+      height: 418px;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(75,75,75,.95),
+          rgba(75,75,75,.65)
+        );
+
+      background-size: cover;
+      background-position: center;
+
+      display: flex;
+      align-items: center;
+      gap: 70px;
+    }
+
+    .hero-content {
+      margin-left: 13%;
+      color: white;
+    }
+
+    .hero-content h1 {
+      font-size: 23px;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+
+    .hero-content p {
+      font-size: 15px;
+      color: #ddd;
+      margin-bottom: 26px;
+    }
+
+    .hero-button {
+      display: inline-block;
+      padding: 14px 29px;
+      border: 1px solid #ddd;
+      color: #ddd;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .hero-button:hover {
+      background: white;
+      color: #111;
+    }
+
+    .slider-controls {
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .arrow {
+      font-size: 17px;
+      color: #777;
+      cursor: pointer;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border: 1px solid #aaa;
+      border-radius: 50%;
+    }
+
+    .dot.active {
+      background: #222;
+      border-color: #222;
+    }
+
+    .pause {
+      margin-left: 55px;
+      font-size: 14px;
+    }
+
+    .exclusive {
+      padding: 40px 13%;
+    }
+
+    .exclusive h2 {
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    @media (max-width: 800px) {
+      header {
+        height: auto;
+        padding: 20px;
+      }
+
+      .nav {
+        gap: 15px;
+      }
+
+      .search,
+      .icons {
+        display: none;
+      }
+
+      .hero {
+        height: 450px;
+      }
+
+      .hero-content {
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+
+      .exclusive {
+        padding: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <div class="top-header">
+
+      <div class="search">⌕</div>
+
+      <div class="logo">
+        <span>CHAMPION</span>
+        <span>KICKS</span>
+      </div>
+
+      <div class="icons">
+        <span>♙</span>
+        <span>♧</span>
+      </div>
+
+    </div>
+
+    <nav class="nav">
+      <a href="#">New Releases⌄</a>
+      <a href="#">Champion's Clothing</a>
+      <a href="#">Kid's Shoes</a>
+      <a href="#" class="active">Home</a>
+      <a href="#">Jordan</a>
+      <a href="#">All Nike's</a>
+      <a href="#">All Adidas</a>
+      <a href="#">All Vans</a>
+      <a href="#">Timberland</a>
+      <a href="#">Puma</a>
+      <a href="#">Louis Vuitton</a>
+      <a href="#">Balenciaga</a>
+      <a href="#">Dior</a>
+      <a href="#">Boots</a>
+      <a href="#" class="active">Prada</a>
+      <a href="#">Official Shoes</a>
+      <a href="#">Casual</a>
+      <a href="#">Apparel</a>
+    </nav>
+
+  </header>
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <h1>Champion Kicks</h1>
+
+      <p>
+        Explore Exclusive Trends in Air Jordan Sneaker Fashion.
+      </p>
+
+      <a href="#" class="hero-button">
+        New on Arrival
+      </a>
+      </div>
+      <div>
+        <img style="height: 120px; width: 220px;" src="image.png" alt="image here">
+      </div>
+
+  </section>
+
+  <div class="slider-controls">
+
+    <span class="arrow">‹</span>
+
+    <span class="dot"></span>
+    <span class="dot active"></span>
+    <span class="dot"></span>
+
+    <span class="arrow">›</span>
+
+    <span class="pause">Ⅱ</span>
+
+  </div>
+
+  <section class="exclusive">
+    <h2>Champion Kicks Exclusive</h2>
+  </section>
+
+</body>
+</html>
